@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:ConversorDeDivisas" 
+		x:Class="ConversorDeDivisas.ConversorDeDivisasPage">
+	<StackLayout Padding="50">
+	    <Label  Text="Conversor de divisas" 
+	            VerticalOptions="Center" 
+	            HorizontalOptions="Center"
+				Font="Large"/>
+	        
+	    <Label Text="Introduce Euros a converstir y pulse aceptar" 
+				x:Name="labelInfo"
+	            VerticalOptions="Center" 
+	            HorizontalOptions="Center" 
+				Font="Medium"/>
+
+	    <Entry x:Name="eurosEntry"
+				Keyboard="Numeric"/>
+
+	    <Button x:Name="btnSubmit"
+	            BackgroundColor="Blue" 
+				Text="Calcular"
+				TextColor="White"
+				Clicked="Handle_Clicked"/>
+
+
+	    <Label  x:Name="textLibras"
+	            Text="12 libras" 
+	            VerticalOptions="Center" 
+	            HorizontalOptions="Center"
+				Font="Medium" 
+				IsVisible="false"/>
+
+	    <Label  x:Name="textDolares"
+	            Text="16 dolares" 
+	            VerticalOptions="Center" 
+	            HorizontalOptions="Center"
+				Font="Medium" 
+				IsVisible="false"/>
+    </StackLayout>
+</ContentPage>
